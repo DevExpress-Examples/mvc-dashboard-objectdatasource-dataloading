@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DashboardConfig.cs](./CS/MVCxDashboard_DataLoading/App_Start/DashboardConfig.cs) (VB: [DashboardConfig.vb](./VB/MVCxDashboard_DataLoading/App_Start/DashboardConfig.vb))
+* [Index.cshtml](./CS/MVCxDashboard_DataLoading/Views/Home/Index.cshtml)
+* [_Layout.cshtml](./CS/MVCxDashboard_DataLoading/Views/Shared/_Layout.cshtml)
+<!-- default file list end -->
 # ASP.NET MVC Dashboard - How to provide data to ObjectDataSource using DataLoading
 
 
