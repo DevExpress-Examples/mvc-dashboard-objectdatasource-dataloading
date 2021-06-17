@@ -7,9 +7,8 @@
 <!-- default file list end -->
 # ASP.NET MVC Dashboard - How to provide data to ObjectDataSource using DataLoading
 
+This example shows how to bind the [ASP.NET MVC Dashboard extension](https://docs.devexpress.com/Dashboard/16977/web-dashboard/aspnet-mvc-dashboard-extension) to the [Object Data Source](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardObjectDataSource) and supply it with data using the [DashboardConfigurator.DataLoading](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.DashboardConfigurator.DataLoading) event. To use the created data source, run the application and [create a new dashboard](https://docs.devexpress.com/Dashboard/116979/web-dashboard/create-dashboards-on-the-web/create-a-dashboard).
 
-This example shows how to bind the <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument16977">ASP.NET MVC Dashboard extension</a> to the <a href="https://documentation.devexpress.com/#Dashboard/clsDevExpressDashboardCommonDashboardObjectDataSourcetopic">Object Data Source</a> and supply it with data using the <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebDashboardConfigurator_DataLoadingtopic">DashboardConfigurator.DataLoading</a> event. To use the created data source, run the application and <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument116979">create a new dashboard</a>.
+## Documentation
 
-<br/>
-
-
+- [Object Data Source](https://docs.devexpress.com/Dashboard/401435/web-dashboard/dashboard-backend/register-default-data-sources-for-the-aspnet-mvc-framework/object-data-source)
