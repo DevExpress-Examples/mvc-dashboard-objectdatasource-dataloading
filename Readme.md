@@ -12,3 +12,6 @@ This example shows how to bind the [ASP.NET MVC Dashboard extension](https://doc
 ## Documentation
 
 - [Object Data Source](https://docs.devexpress.com/Dashboard/401435/web-dashboard/dashboard-backend/register-default-data-sources-for-the-aspnet-mvc-framework/object-data-source)
+
+## More Examples
+- [ASP.NET MVC Dashboard - How to provide data for ObjectDataSource using a fill service](https://github.com/DevExpress-Examples/aspnet-mvc-dashboard-how-to-provide-data-for-objectdatasource-using-a-fill-service-t583015)
