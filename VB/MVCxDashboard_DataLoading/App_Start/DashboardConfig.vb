@@ -6,7 +6,7 @@ Imports DevExpress.DashboardWeb.Mvc
 
 Public Class DashboardConfig
     Public Shared Sub RegisterService(ByVal routes As RouteCollection)
-        routes.MapDashboardRoute()
+        routes.MapDashboardRoute("dashboardControl", "DefaultDashboard")
 
         DashboardConfigurator.Default.SetDashboardStorage(New DashboardFileStorage("~/App_Data/"))
 
@@ -35,8 +35,8 @@ Public Class DashboardConfig
         For i As Integer = 0 To 99
             Dim record As New SalesPersonData()
             Dim seed As Long = CLng(Date.Now.Ticks) And &HFFFF
-            record.SalesPerson = salesPersons((New Random(seed)).Next(0, salesPersons.Length))
-            record.Quantity = (New Random(seed)).Next(0, 100)
+            record.SalesPerson = salesPersons((New Random(CInt(seed))).Next(0, salesPersons.Length))
+            record.Quantity = (New Random(CInt(seed))).Next(0, 100)
             data.Add(record)
             Thread.Sleep(3)
         Next i
