@@ -1,10 +1,10 @@
-using DevExpress.DashboardCommon;
-using DevExpress.DashboardWeb;
-using DevExpress.DashboardWeb.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Web.Routing;
+using DevExpress.DashboardCommon;
+using DevExpress.DashboardWeb;
+using DevExpress.DashboardWeb.Mvc;
 
 public class DashboardConfig {
     public static void RegisterService(RouteCollection routes) {
@@ -15,6 +15,7 @@ public class DashboardConfig {
         var dataSourceStorage = new DataSourceInMemoryStorage();
         DashboardConfigurator.Default.SetDataSourceStorage(dataSourceStorage);
         DashboardObjectDataSource objDataSource = new DashboardObjectDataSource("Object Data Source");
+        objDataSource.DataId = "odsSales";
         objDataSource.DataSource = typeof(SalesPersonData);
         dataSourceStorage.RegisterDataSource("objDataSource", objDataSource.SaveToXml());
 
@@ -22,7 +23,7 @@ public class DashboardConfig {
     }
 
     private static void Default_DataLoading(object sender, DataLoadingWebEventArgs e) {
-        if (e.DataSourceName == "Object Data Source") {
+        if (e.DataId == "odsSales") {
             e.Data = CreateData();
         }
     }

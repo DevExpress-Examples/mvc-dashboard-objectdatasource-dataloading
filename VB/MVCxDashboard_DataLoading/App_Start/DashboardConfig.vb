@@ -13,6 +13,7 @@ Public Class DashboardConfig
         Dim dataSourceStorage = New DataSourceInMemoryStorage()
         DashboardConfigurator.Default.SetDataSourceStorage(dataSourceStorage)
         Dim objDataSource As New DashboardObjectDataSource("Object Data Source")
+        objDataSource.DataId = "odsSales"
         objDataSource.DataSource = GetType(SalesPersonData)
         dataSourceStorage.RegisterDataSource("objDataSource", objDataSource.SaveToXml())
 
@@ -20,7 +21,7 @@ Public Class DashboardConfig
     End Sub
 
     Private Shared Sub Default_DataLoading(ByVal sender As Object, ByVal e As DataLoadingWebEventArgs)
-        If e.DataSourceName = "Object Data Source" Then
+        If e.DataId = "odsSales" Then
             e.Data = CreateData()
         End If
     End Sub
